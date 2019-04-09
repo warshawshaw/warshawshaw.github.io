@@ -3,4 +3,9 @@
   <head>
     <meta http-equiv="Refresh" content="0; url=https://buttondown.email/dream-machine" />
   </head>
+  
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+  
 </html>
